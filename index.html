@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSAP - 崎山茂 建築・計画事務所</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body class="fadeout">
+   
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+                <img src="img/header-logo.png" class="header-logo">
+                崎山茂 建築・計画事務所
+            </a>
+        </div>
+        
+        <div class="header-right">
+            <div class="header-menu">
+                <a href="works/index.html">Works</a>
+                <a href="bio.html">Biography</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="ja-eng">
+                <span class="nowlang">日本語</span>
+                <p>|</p>
+                <a href="en/index.html">English</a>
+            </div>
+        </div>
+
+        <div id="menu">
+            <div>
+                <a href="#menu" class="menuopen"><img src="icon-bars.png" class="menu-icon"></a>
+                <a href="#close" class="menuclose"><img src="icon-close.png" class="menu-icon"></a>
+            </div>
+            <ul>
+                <li><a href="works/index.html">Works</a></li>
+                <li><a href="bio.html">Biography</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="ja-eng"><a href="en/index.html">English</a></li>
+            </ul>
+        </div>
+   
+    </header>
+    
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slide1"><span class="slides">大手町プレイス</span></div>
+        <div class="swiper-slide slide2"><span class="slides">栄光学園中学高等学校</span></div>
+        <div class="swiper-slide slide3"><span class="slides">大阪マリオット都ホテル</span></div>
+        <div class="swiper-slide slide4"><span class="slides">Thiripyitsaya Sanctuary Resort Bagan</span></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination swiper-pagination-white"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="fade.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+<script type="text/javascript">
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    loop: true,
+    speed:1200,
+    autoplay: {
+        delay: 3000,
+        stopOnLast: false,
+        disableOnInteraction: true,
+      },
+  });
+</script>
+
+</html>
